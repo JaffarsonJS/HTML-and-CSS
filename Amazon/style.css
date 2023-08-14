@@ -1,0 +1,250 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html,body
+{
+    width: 100%;
+}
+
+/* Navigation Bar Starts */
+nav
+{
+    /* border: 2px solid red; */
+    
+    background-color: #131921;
+    color: white;
+
+    height: 60px;
+    width: 100%;
+
+    overflow: hidden;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Nav Logo */
+nav .logo
+{
+    display: flex;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+nav .logo img
+{
+    width: 98px;
+    height: 35px;
+    margin-top: 17px;
+}
+nav .logo span
+{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* Nav Address Div */
+nav .addressDiv
+{
+    display: flex;
+    margin: 10px;
+    margin-right: 22px;
+}
+nav .addressDiv .locationIcon
+{
+    font-size: 20px;
+    width: 15px;
+    height: 18px;
+    margin-top: 12px;
+    margin-right: 3px;
+}
+nav .addressDiv .content1
+{
+    margin-top: 4px;
+}
+nav .addressDiv .content1 .greetings
+{
+    font-size: 13px;
+    margin-bottom: -4px;
+}
+nav .addressDiv .content1 .address
+{
+    font-size: 13px;
+    font-weight: 900;
+}
+
+/* Nav Search Bar */
+nav .searchBar
+{
+    position: relative;
+    margin-top: 8px;
+    height: 60px;
+    width: 816.200px;
+}
+nav .searchBar input
+{
+    height: 40px;
+    width: 789.200px;
+    border-radius: 4px;
+    /* border: 1px solid rgba(128, 128, 128, 0.45); */
+}
+nav .searchBar input::placeholder
+{
+    color: rgba(91, 77, 77, 0.672);
+    font-weight: 100;
+    font-size: 15px;
+    padding-left: 7%;
+}
+nav .searchBar .countryselection
+{
+    text-align: center;
+    background-color: aliceblue;
+    position: absolute;
+    height: 67%;
+    width: 6%;
+    color: rgba(91, 77, 77, 0.819);
+    font-weight: 600;
+}
+nav .searchBar .searchIcon
+{
+    position: absolute;
+    right: 29px;
+    height: 37px;
+    width: 41px;
+    text-align: center;
+    padding: 9px 0px;
+    font-size: 20px;
+    border-radius: 4px;
+    top: 1px;
+    color: black;
+    background-color: rgb(254,189,105);
+}
+
+/* Nav Language Div */
+nav .langDiv
+{
+    display: flex;
+    margin-top: 20px;
+}
+nav .langDiv img
+{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 4px;
+}
+nav .langDiv p
+{
+    font-size: 14px;
+    margin-right: 2px;    
+    margin-top: 3px;
+}
+nav .langDiv .langDropIcon
+{
+    margin-top: 5px;
+}
+/* Nav  */
+nav .accntDiv
+{
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+}
+nav .accntDiv .accntDiv1
+{
+    margin-right: 5px;
+}
+nav .accntpara1
+{
+    font-size: 13px;
+    margin-bottom: -4px;
+    margin-top: 6px;
+}
+nav .accntpara2
+{
+    font-size: 14px;
+    font-weight: 600;
+}
+nav .accountDropIcon
+{
+    margin-top: 19px;
+}
+
+/* Nav Return */
+nav .returnsAndOrdersDiv
+{
+    margin-right: 5px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+nav .returnsAndOrdersDiv .rodpara1
+{
+    font-size: 13px;
+    margin-bottom: -3px;
+    margin-top: 6px;
+}
+nav .returnsAndOrdersDiv .rodpara2
+{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Nav Cart */
+nav .cartDiv
+{
+    display: flex;
+    margin-right: 5px;
+    margin-left: 20px;
+    margin-top: 9px;
+}
+nav .cartDiv .cartIcon
+{
+    font-size: 38px;
+    margin-right: 2px;
+}
+nav .cartDiv .cartpara
+{
+    font-size: 14px;
+    font-weight: 600;   
+    margin-top: 18px;
+}
+/* NAV ENDS */
+
+/* Header Starts */
+header
+{
+    background-color: #232f3e;
+    color: white;
+    font-size: 14.5px;
+    display: flex;
+}
+header .headerSec1 ul
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+header .headerSec1 ul li
+{
+    margin: 10px 9px;
+}
+header .headerSec1 ul .listIcon
+{
+    /* font-size: 20px; */
+    
+}
+/* header .headerSec1 ul li span
+{
+    display: inline-block;
+    margin-bottom: 12px;
+} */
+
+header .headerSec2
+{
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 32px;
+}

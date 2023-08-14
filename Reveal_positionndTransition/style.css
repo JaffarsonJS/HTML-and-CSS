@@ -1,0 +1,68 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body,html
+{
+    width: 100%;
+}
+section
+{
+    height: 325px;
+    width: 431px;
+    margin: 150px auto;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+section:hover .content
+{
+    height: 30%;
+}
+section .content
+{
+    background: #50d8af;
+    position: absolute;
+    /* height: 30%; */
+    height: 0%;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    transition: height 0.3s 0.2s;
+    overflow: hidden;
+}
+section img
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+}
+section:hover img
+{
+    /* transition: height 0.3s 0.2s; */
+    transform: translate(0px,-25px);
+}
+section .content .content1,.content2
+{
+    padding: 5px;
+    padding-left: 15px;
+}
+section .content .content1 h2
+{
+    margin-bottom: 20px;
+}
+section .content .content2
+{
+    margin: 29px 14px;
+    font-size: 20px;
+}
+section .content .content2 .icon1
+{
+    margin-right: 10px;
+}

@@ -1,0 +1,114 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+html,body
+{
+    width: 100%;
+}
+
+/* Starts */
+
+section
+{
+    height: 319px;
+    width: 433px;
+    margin: 150px auto;
+    position: relative;
+    border-radius: 8px;
+    color: white;
+    /* color: white; */
+    /* overflow: hidden; */
+}
+
+/* Content 1 */
+
+section .content1
+{
+    /* border: 2px solid red; */
+    font-size: 27px;
+    position: absolute;
+
+    height: 0%;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.3s 0.2s;
+    text-align: center;
+    top: 0;
+    
+}
+section .content1 i
+{
+    margin-top: 70px;
+}
+section:hover .content1
+{
+    /* top: 0; */
+    padding: 10px;
+    height: 50%;
+}
+
+/* Content 2 */
+
+section .content2
+{
+    /* border: 2px solid blue; */
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    bottom: 0;
+    transition: 0.3s 0.2s;
+}
+section .content2 h3
+{
+    margin-bottom: 10px;
+}
+section:hover .content2
+{
+    height: 25%;
+}
+
+section .bg-clr
+{
+    /* border: 3px solid red; */
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    transition: 0.3s 0.2s;
+}
+section:hover .bg-clr
+{
+    right: 0;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.264),rgba(0, 0, 0, 0.275));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section img
+{
+    height: 100%;
+    width: 100%;
+    
+}
+

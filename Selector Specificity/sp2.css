@@ -1,0 +1,28 @@
+
+input[type="text"]
+{
+    background-color: blue;
+}
+input[type]
+{
+    background-color: pink; 
+}
+
+.in
+{
+    background-color: yellow;
+}
+
+
+/* 1. class selector 
+input.in
+{
+    background-color: red;
+}
+*/
+
+/* 2. Attribute Selector and Attribute Value Selector
+
+=> whichever property took place at the last */
+
+/* 3. Generic Class Selector */

@@ -1,0 +1,60 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+html,body
+{
+    width: 100%;
+}
+.whole
+{
+    padding: 30px;
+    border: 4px solid rgba(94, 88, 88, 0.361);
+    box-shadow: 10px 10px 10px rgba(94, 88, 88, 0.361);
+}
+.body
+{
+    display: flex;
+}
+.whole .heading
+{
+    text-align: center;
+}
+.body .aside
+{
+    padding-left: 40px;
+}
+.whole img
+{
+    height: 540px;
+    width: 350px;
+    margin-top: 45px;
+}
+.body .aside .title
+{
+    font-size: 34px;
+    margin-top: 37px;
+    margin-bottom: 15px;
+}
+.body .aside .desc1
+{
+    margin-bottom: 24px;
+}
+.aside .lists ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.aside .lists ul li
+{
+    width: 50%;
+    padding: 15px 0px;
+}
+.aside .lists ul li .boldy
+{
+    font-weight: 900;
+}
