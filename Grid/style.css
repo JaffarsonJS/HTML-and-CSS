@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    width: 100%;
+    background-color: white;
+}
+.container
+{
+    /* border: 2px solid black; */
+    padding-block: 10rem;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    place-content: center;
+    grid-template-areas: ". childDiv";
+}
+.childDiv{
+    /* border: 3px solid blue; */
+    grid-area: childDiv;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+}
+
+.child1{
+    /* border: 3px solid green; */
+    background-color: #7a6ad8;
+    border-radius: 10%;
+    display: grid;
+    place-content: center;
+    gap: 1.5em;
+    padding: 2rem 1.5rem;
+    padding-block: 5rem;
+}
+
+.boxes{
+    background-color: white;
+    border-radius: 40px;
+}
+  
+.boxes:hover .boxHead p
+{
+    color: #7a6ad8;
+}
+
+.boxes .boxHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins';
+
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.boxBody{
+    color: #4a4a4a;
+    font-size: large;
+    overflow: hidden;
+    padding-inline: 1rem;
+
+    padding: 0;
+    padding-inline: 25px;
+    height: 0;
+    transition: all 0.5s;
+}
+.boxBody .bbpara{
+    font-size: 14px;
+    height: 0;
+    padding: 0;
+    /* transition: height 0.4s,padding 0.4s; */
+}
+
+.boxes:hover .boxBody{
+    padding: 0px 25px 100px;
+    height: 100%;
+}
+
+
+.boxes span
+{
+    font-size: 18px;
+    font-weight: 500;
+    content: '+';
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #7a6ad8;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.boxes span::after
+{
+    font-size: 18px;
+    font-weight: 500;
+    content: '-';
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    background-color: #7a6ad8;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+}
+.boxes:hover span{
+    visibility: hidden;;
+}
+.boxes:hover span::after{
+    visibility: visible;
+}
+
+
+/* Child 2 */
+
+.child2{
+    /* border: 2px solid red; */
+    /* grid-area: child2; */
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+}
+.child2InnerDiv{
+    /* border: 2px solid yellow; */
+    background-color: #f1f0fe;
+    padding-bottom: 3rem;
+    /* height: 60dvh; */
+}
+
+.chI{
+    /* margin-top: 70px;
+    margin-left: 60px;
+    margin-bottom: 0px;
+    margin-right: 100px; */
+    padding: 15px 25px;
+}
+.chI .para1{
+    color: #7a6ad8;
+    font-size: 15px;
+    font-weight: 600;
+}
+.chI h1{
+    font-size: 36px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 20px 0;
+    line-height: 44px;
+}
+.chI .para2{
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 28px;
+    color: #4a4a4a;
+
+}
+.chI button{
+    border: none;
+    display: inline-block;
+    background-color: #fff;
+    color: #7a6ad8;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 25px;
+    border-radius: 20px;
+    transition: all .3s;
+    margin-top: 50px;
+}
+.chI button:hover{
+    background-color: #7a6ad8;
+    color: white;
+}
+
+/* Tablet Screen */
+@media(max-width:768px)  
+{
+    .container{
+    padding-block: 10rem;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+    place-content: center;
+    grid-template-areas: ". childDiv";
+
+    }
+    .childDiv{
+    grid-area: childDiv;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
+    }
+    .child1{
+    gap: 1.5rem;
+    padding: 3rem 1.5rem;
+    padding-block: 2rem;
+    border-radius: 38px;
+    }
+
+    .boxes .boxHead{
+        padding: 17px 25px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .chI{
+        padding: 3rem 1.5rem;
+    padding-block: 2rem;
+    }
+    
+}
