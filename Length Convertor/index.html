@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Length Covertor</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <section class="main-container">
+    <h1>Length Covertor</h1>
+    <div class="main-input-div">
+    <div class="inputdiv">
+      <label for="fromlength" class="label-length">From:</label>
+      <select name="fromlength" id="fromlength">
+        <option value="millimeter">Millimeter</option>
+        <option value="centimeter">Centimeter</option>
+        <option value="decimeter">Decimeter</option>
+        <option value="meter">Meter</option>
+        <option value="kilometer">Kilometer</option>
+        <option value="foot">Foot</option>
+        <option value="inch">Inch</option>
+        <option value="mile">Mile</option>
+        <option value="yard">Yard</option>
+      </select>
+    <input type="text" id="input" placeholder="Enter your Value">
+    </div>
+
+    <div class="inputdiv">
+      <label for="tolength" class="label-length">To:</label>
+      <select name="tolength" id="tolength">
+        <option value="millimeter">Millimeter</option>
+        <option value="centimeter">Centimeter</option>
+        <option value="decimeter">Decimeter</option>
+        <option value="meter">Meter</option>
+        <option value="kilometer">Kilometer</option>
+        <option value="foot">Foot</option>
+        <option value="inch">Inch</option>
+        <option value="mile">Mile</option>
+        <option value="yard">Yard</option>
+      </select>
+    <input type="text" id="input" placeholder="Result">
+    </div>
+  </div>
+
+    <div id="result"></div>
+  </section>
+
+  <script src="./app.js">
+  </script>
+</body>
+</html>
